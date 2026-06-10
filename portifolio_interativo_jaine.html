@@ -164,7 +164,7 @@
             <div class="w-12 h-[1px] bg-earth-600 mx-auto"></div>
         </div>
 
-        <!-- Texto Original sobre as Obras -->
+        <!-- Texto sobre as Obras -->
         <div class="max-w-4xl mx-auto text-center mb-24 prose prose-stone dark:prose-invert">
             <p class="text-lg md:text-xl font-serif italic text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
                 "Grande parte das minhas obras são feitas com madeiras, cascas, troncos e elementos encontrados no meio da natureza. Gosto de trabalhar diretamente na madeira, aproveitando formas, texturas e detalhes que já existem naturalmente, como se cada pedaço já carregasse uma história antes mesmo de virar arte."
@@ -174,7 +174,7 @@
             </p>
         </div>
 
-        <!-- Grelha de Obras (Espaçamento Generoso com 9 fotos) -->
+        <!-- Galeria de Obras -->
         <div class="space-y-4 mb-8">
             <div class="flex justify-between items-center bg-stone-100 dark:bg-forest-800/30 p-4 rounded border border-stone-200/40 dark:border-forest-800/40">
                 <span class="text-xs tracking-wider uppercase font-semibold text-stone-600 dark:text-stone-300">Galeria de Obras</span>
@@ -466,7 +466,7 @@
 
     <!-- INTERAÇÕES INTERATIVAS EM JAVASCRIPT -->
     <script>
-        // Função para atualizar e visualizar as imagens carregadas localmente pela Jaine
+        // Função para atualizar e visualizar as imagens carregadas localmente
         function previewImage(event, targetId) {
             const file = event.target.files[0];
             if (file) {
@@ -479,7 +479,7 @@
             }
         }
 
-        // Ajustar dinamicamente a intensidade do embaçado (blur) da capa
+        // Ajustar a intensidade do blur da capa
         function adjustBlur(value, targetId) {
             const img = document.getElementById(targetId);
             img.style.filter = `blur(${value}px) brightness(95%) saturate(85%) contrast(95%)`;
